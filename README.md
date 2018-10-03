@@ -1,4 +1,4 @@
-# ToDoList
-This is a todo list
-Learn Markdown
 
+todo list creating with javascript
+
+frameworks used : jQuery, uikit
