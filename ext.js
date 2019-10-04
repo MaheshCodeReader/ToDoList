@@ -1,11 +1,17 @@
 var todoid = 0;
 
+let toDoList = [];
+
 function deleteTodo(id){
     $('#'+id).remove();
 }
 
 function createTodo(t){
-    todoid +=1;
+	toDoList.push({
+		id: (todoid++),
+		todo: t
+	});
+	console.log(toDoList);
     html = `
                             <div class="uk-margin uk-card uk-card-primary uk-card-hover uk-light uk-padding" id='${todoid}'>
                                 <div class="uk-body">`;
